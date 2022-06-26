@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" type="module"></script>
+
+  <title>2048</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>2048</h1>
+
+      <button>New Game</button>
+
+      <div id="score-bar">
+        <div id="score">512</div>
+        <div id="bestScore">1024</div>
+      </div>
+    </header>
+
+    <div id="boardGrid">
+      <table>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button id="upBtn">Up</button>
+      <button id="rightBtn">Right</button>
+      <button id="downBtn">Down</button>
+      <button id="leftBtn">Left</button>
+    </div>
+
+    <p id="tips">
+      <span>Tips:</span>
+      <span>Use arrow keys to move tiles.</span>
+      <span>Use the new game button to start a new game.</span>
+    </p>
+    
+  </div>
+</body>
+
+</html>

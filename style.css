@@ -1,0 +1,39 @@
+body, input, textarea, select, button {
+  font-family: "Trebuchet MS",
+    "Lucida Sans Unicode", "Lucida Grande", "Lucida sans",
+    Arial, sans-serif;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+  letter-spacing: 1.3px;
+  word-spacing: 3.8px;
+}
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 3px 10px;
+  transition: 200ms;
+  box-shadow: 1px 2px 3px 0.5px #333;
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 1px 0.3px #333;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+}
+
+#score-bar {
+  display: flex;
+  align-items: center;
+}
