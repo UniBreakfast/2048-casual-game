@@ -1,4 +1,4 @@
-# 2048-casual-game
+# [2048-casual-game](https://github.com/UniBreakfast/2048-casual-game)
 
 HOW TO PLAY: Use your arrow keys to move the tiles. Tiles with the same number merge into one when they touch. Add them up to reach 2048!
 
