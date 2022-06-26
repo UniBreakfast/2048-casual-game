@@ -12,7 +12,7 @@ body, input, textarea, select, button {
 button {
   cursor: pointer;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 7px;
   padding: 3px 10px;
   transition: 200ms;
   box-shadow: 1px 2px 3px 0.5px #333;
@@ -20,7 +20,7 @@ button {
 
 button:active {
   transform: translateY(1px);
-  box-shadow: 0 1px 1px 0.3px #333;
+  box-shadow: 0 1px 1px №0.3px #333;
 }
 
 ul {
@@ -31,9 +31,99 @@ ul {
 
 header {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
+
 
 #score-bar {
   display: flex;
   align-items: center;
+}
+
+#score, #bestScore{
+  border: solid 1px #333333;
+  padding: 0 15px 0 15px;
+  background-color: #ECB;
+}
+
+#scoreLabel, #bestLabel {
+  font-size: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+#scoreNumber, #bestNumber {
+  font-weight: bold;
+  text-align: center;
+}
+
+td {
+  width: 55px;
+  height: 55px;
+  background-color: #EEE;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+table {
+  background-color: #999;
+  grid-area: board;
+  border-radius: 10px;
+  border-spacing: 3px;
+}
+
+#boardGrid {
+  display: grid;
+  width: max-content;
+  margin: auto;
+  grid-template-areas:
+". up ."
+"left board right"
+". down .";
+  grid-gap: 10px;
+
+}
+
+#rightBtn {
+  grid-area: right;
+  width: 70px;
+}
+
+#leftBtn {
+  grid-area: left;
+  width: 70px;
+}
+
+#upBtn {
+  grid-area: up;
+  height: 60px;
+}
+
+#downBtn {
+  grid-area: down;
+  height: 60px;
+}
+
+#gameTitle {
+ font-size: 40px;
+}
+
+#tips {
+  text-align: center;
+  font-size: 20px;
+}
+
+.tile {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+ background-color: #EECCBB;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 55px;
+  left: 0;
+  top: 0;
+  transition: 1s;
 }
